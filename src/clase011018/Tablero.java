@@ -24,10 +24,10 @@ public class Tablero extends Application {
         //Layout
         Pane pane1=new Pane();
         Canvas canvas; //Creacion del tablero de 700px por 700px
-        canvas = new Canvas(700, 700);
+        canvas = new Canvas(1024, 512);
         pane1.getChildren().add(canvas);
         
-        Scene scene= new Scene(pane1, 700, 700, Color.WHITESMOKE);
+        Scene scene= new Scene(pane1, 1024, 512, Color.WHITESMOKE);
         
         GraphicsContext gc= canvas.getGraphicsContext2D(); //lapiz para dibujar sobre el tablero
         gc.setFill(Color.PURPLE);

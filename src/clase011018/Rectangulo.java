@@ -18,7 +18,7 @@ public class Rectangulo {
         this.y = y;
     }
     
-    public void mover(){
+    public void moverEnX(){
         this.x++;
     }
 
