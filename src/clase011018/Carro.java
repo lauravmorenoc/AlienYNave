@@ -19,17 +19,27 @@ public class Carro {
         this.x=x;
         this.y=y;
         this.llantas=new Llanta[2];
-        this.llantas[0]=new Llanta(x, y);
-        this.llantas[1]=new Llanta(x, y);
+        this.llantas[0]=new Llanta(x+5, y+20);
+        this.llantas[1]=new Llanta(x+45, y+20);
         this.chasis=new Chasis(x, y);
     } 
-    public void mover(int newX, int newY){
+    public void moverxPosicion(int newX, int newY){
         this.x=newX;
         this.y=newY;
         for (int i = 0; i < 2; i++) {
             this.llantas[i].mover(newX, newY);
         }
         this.chasis.mover(newX, newY);
+    }
+    
+    public void moverEnX(){
+        chasis.setX(chasis.getX()+1);
+        llantas[0].setX(llantas[0].getX()+1);
+        llantas[1].setX(llantas[1].getX()+1);
+    }
+    
+    public void moverEnY(){
+        this.y++;
     }
 
     public int getX() {

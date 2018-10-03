@@ -23,11 +23,11 @@ public class Tablero extends Application {
     public void start(Stage stage) throws Exception{
         //Layout
         Pane pane1=new Pane();
-        Canvas canvas; //Creacion del tablero de 300px por 300px
-        canvas = new Canvas(300, 300);
+        Canvas canvas; //Creacion del tablero de 700px por 700px
+        canvas = new Canvas(700, 700);
         pane1.getChildren().add(canvas);
         
-        Scene scene= new Scene(pane1, 300, 300, Color.WHITESMOKE);
+        Scene scene= new Scene(pane1, 700, 700, Color.WHITESMOKE);
         
         GraphicsContext gc= canvas.getGraphicsContext2D(); //lapiz para dibujar sobre el tablero
         gc.setFill(Color.PURPLE);
